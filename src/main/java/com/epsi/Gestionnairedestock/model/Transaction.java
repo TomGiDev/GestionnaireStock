@@ -20,6 +20,10 @@ public class Transaction {
         return id;
     }
 
+    public Transaction() {
+        transactionDateTime = LocalDateTime.now();
+    }
+
     public void setId(Long id) {
         this.id = id;
     }
