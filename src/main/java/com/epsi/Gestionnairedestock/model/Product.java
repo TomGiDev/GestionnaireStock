@@ -7,6 +7,7 @@ import org.hibernate.annotations.CascadeType;
 import java.util.List;
 
 @Entity
+@Table(name = "products")
 public class Product {
 
     @Id
@@ -23,6 +24,10 @@ public class Product {
         this.id = id;
         this.name = name;
         this.transactionList = transactionList;
+    }
+
+    public Product() {
+
     }
 
     public Long getId() {
